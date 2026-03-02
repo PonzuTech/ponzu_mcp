@@ -1,0 +1,54 @@
+{
+  "name": "@ponzu_app/mcp",
+  "version": "1.1.0",
+  "mcpName": "io.github.PonzuTech/ponzu",
+  "description": "MCP server for Ponzu — deploy tokens, buy presales, swap, and farm on Ethereum via AI agents",
+  "type": "module",
+  "main": "build/index.js",
+  "bin": {
+    "ponzu-mcp": "build/index.js"
+  },
+  "scripts": {
+    "build": "tsc && chmod 755 build/index.js",
+    "dev": "tsx watch src/index.ts",
+    "start": "node build/index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.11.4",
+    "viem": "^2.0.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "ethereum",
+    "defi",
+    "token",
+    "token-launch",
+    "presale",
+    "dex",
+    "farming",
+    "erc20",
+    "ponzu",
+    "launchpad",
+    "ai-agent"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PonzuTech/ponzu_mcp"
+  },
+  "homepage": "https://ponzu.app",
+  "files": [
+    "build",
+    "README.md"
+  ],
+  "license": "UNLICENSED"
+}

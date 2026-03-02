@@ -1,0 +1,43 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.PonzuTech/ponzu",
+  "description": "ERC-20 token launchpad on Ethereum — deploy, presale, swap, and farm via AI agents",
+  "repository": {
+    "url": "https://github.com/PonzuTech/ponzu_mcp",
+    "source": "github"
+  },
+  "version": "1.1.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@ponzu_app/mcp",
+      "version": "1.1.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "description": "Private key for signing transactions (optional, enables write operations)",
+          "isRequired": false,
+          "format": "string",
+          "isSecret": true,
+          "name": "PONZU_PRIVATE_KEY"
+        },
+        {
+          "description": "Ethereum RPC URL (defaults to public RPCs)",
+          "isRequired": false,
+          "format": "string",
+          "isSecret": false,
+          "name": "PONZU_RPC_URL"
+        },
+        {
+          "description": "Network to use: mainnet or sepolia (default: mainnet)",
+          "isRequired": false,
+          "format": "string",
+          "isSecret": false,
+          "name": "PONZU_NETWORK"
+        }
+      ]
+    }
+  ]
+}
