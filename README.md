@@ -2,6 +2,8 @@
 
 MCP server for Ponzu — deploy tokens, buy presales, swap, and farm on Ethereum via AI agents.
 
+[![token-launcher MCP server](https://glama.ai/mcp/servers/PonzuTech/ponzu_mcp/badges/card.svg)](https://glama.ai/mcp/servers/PonzuTech/ponzu_mcp)
+
 ## Tools (17)
 
 | Tool | Description |
